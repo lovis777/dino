@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dino - Intranet</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="../css/admin.css" rel="stylesheet" type="text/css">
+        <link href="../css/compras.css" rel="stylesheet" type="text/css">
+		<link href="../js/input/jquery-ui.css" rel="stylesheet" type="text/css">
+        <link rel="shortcut icon" href="../imagen/logo.png">
+    </head>
+    <body>
+        <div class="contenedor">
+            <div class="cabeza">
+                <section id="grupocabeza">
+                    <div class="logotipo">
+                    <img src="../imagen/logo.png">
+                    <p><b>OBLITAS</b></p>
+                    <p>Maestro de la construcción</p>
+                    </div>
+                    <div class="datos">
+                        <p>Trujillo, 18 de Enero del 2017</p>
+                    </div>
+                </section>
+            </div>
+            <div class="derecha">
+                <center><p><b>Tipo de Cambio</b></p></center>
+                <br>
+                <p>Compra S/</p><br>
+                <input type="text" placeholder="Compra"><br>
+                <p>Venta S/</p><br>
+                <input type="text" placeholder="Venta"><br>
+            </div>
+            <div class="izquierda">
+                <menu>
+                    <nav>
+                        <ul>
+                            <li><a id="perfil" href="#">
+                                    <b>Bienvenido :</b><br> 
+                                    <br>
+                                    Eduardo Paz<br>
+                                    Super Administrador<br>
+                                </a>
+                            </li>
+                            <li><a href="../index_.html"><img src="../imagen/iconos/inicio.png"> | Inicio</a></li>
+                            <li><a href="#"><img src="../imagen/iconos/nuevo.png"> | Ventas</a>
+                                <ul>
+                                    <li><a href="#">&checkmark; opcion 1</a></li>
+                                    <li><a href="#">&checkmark; opcion 2</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#"><img src="../imagen/iconos/nuevo.png"> | Compras</a>
+                                <!-- inicio asanchez 12-03-17-->
+                                <ul>
+                                    <li><a href="ordenCompra.html">&nbsp;&nbsp;&nbsp;&checkmark; Orden de Compra</a></li>
+                                    <li><a href="registrarCompra.html">&nbsp;&nbsp;&nbsp;&checkmark; Registro de &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbspCompras </a></li>
+									<li><a href="registrarProducto.html">&nbsp;&nbsp;&nbsp;&checkmark; Registro de &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbspProductos </a></li>
+                                    <li><a href="#">&nbsp;&nbsp;&nbsp;&checkmark; Esto es un link muy largo  
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;para hacer una prueba</a></li>
+                                </ul>
+                                <!-- fin asanchez 12-03-17-->
+                            </li>
+                            <li><a href="#"><img src="../imagen/iconos/nuevo.png"> | Almacen</a></li>
+                            <li><a href="#"><img src="../imagen/iconos/nuevo.png"> | Proveedores</a></li>
+                            <li><a href="#"><img src="../imagen/iconos/nuevo.png"> | Reportes</a>
+                                <ul>
+                                    <li><a href="#">&checkmark; opcion 1</a></li>
+                                    <li><a href="#">&checkmark; opcion 2</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </menu>
+            </div>
+            
+            <div class="cuerpo">
+                <div class="compras">
+                    <span>REGISTRO DE COMPRA</span>
+                    <form action="" method="post">
+                        <table border="0" class="tableDemo bordered">
+							<tr>
+								<th width="2%">Sr</th>
+								<th width="16%">First Name</th>
+								<th width="16%">Last Name</th>
+								<th width="12%">Technology</th>
+								<th width="20%">Email</th>
+								<th width="18%">Address</th>
+								<th width="14%">Action</th>
+							</tr>
+
+							<tr>
+								<td></td>
+								<td class="fname"></td>
+								<td class="lname"></td>
+								<td class="tech"></td>
+								<td class="email"></td>
+								<td class="address"></td>
+								<td>
+									<a href="#" id="#" class="ajaxEdit"><img src="" class="eimage"></a>
+									<a href="#" id="#" class="ajaxDelete"><img src="" class="dimage"></a>
+								</td>
+							</tr>
+		
+						</table>  
+						
+                    </form>
+                </div>
+            </div>
+            <div class="pie">
+                <footer>
+                    Copyright © 2017 Distribuidora "Razón Social" SRL. All rights reserved - Atención al Cliente: 0800-1-3466
+                </footer>
+            </div>
+        </div>
+		<script type="text/javascript" src="../js/jquery.min2.js"></script>
+		<script type="text/javascript" src="../js/jquery-ui.js"></script>
+		<script type="text/javascript" src="../js/menu.js"></script>
+    </body>
+</html>
+

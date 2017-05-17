@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dino - Intranet</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="../css/admin.css" rel="stylesheet" type="text/css">
+        <link href="../css/compras.css" rel="stylesheet" type="text/css">
+		<link href="../js/input/jquery-ui.css" rel="stylesheet" type="text/css">
+        <link rel="shortcut icon" href="../imagen/logo.png">
+    </head>
+    <body>
+        <div class="contenedor">
+            <div class="cabeza">
+                <section id="grupocabeza">
+                    <div class="logotipo">
+                    <img src="../imagen/logo.png">
+                    <p><b>OBLITAS</b></p>
+                    <p>Maestro de la construcción</p>
+                    </div>
+                    <div class="datos">
+                        <p>Trujillo, 18 de Enero del 2017</p>
+                    </div>
+                </section>
+            </div>
+            <div class="derecha">
+                <center><p><b>Tipo de Cambio</b></p></center>
+                <br>
+                <p>Compra S/</p><br>
+                <input type="text" placeholder="Compra"><br>
+                <p>Venta S/</p><br>
+                <input type="text" placeholder="Venta"><br>
+            </div>
+            <div class="izquierda">
+                <menu>
+                    <nav>
+                        <ul>
+                            <li><a id="perfil" href="#">
+                                    <b>Bienvenido :</b><br> 
+                                    <br>
+                                    Eduardo Paz<br>
+                                    Super Administrador<br>
+                                </a>
+                            </li>
+                            <li><a href="#"><img src="../imagen/iconos/inicio.png"> | Inicio</a></li>
+                            <li><a href="#"><img src="../imagen/iconos/nuevo.png"> | Ventas</a>
+                                <ul>
+                                    <li><a href="#">&checkmark; opcion 1</a></li>
+                                    <li><a href="#">&checkmark; opcion 2</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#"><img src="../imagen/iconos/nuevo.png"> | Compras</a>
+                                <!-- inicio asanchez 12-03-17-->
+                                <ul>
+                                    <li><a href="vista/ordenCompra.html">&nbsp;&nbsp;&nbsp;&checkmark; Orden de Compra</a></li>
+                                    <li><a href="#">&nbsp;&nbsp;&nbsp;&checkmark; Registro de Compras</a></li>
+                                    <li><a href="#">&nbsp;&nbsp;&nbsp;&checkmark; Esto es un link muy largo  
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;para hacer una prueba</a></li>
+                                </ul>
+                                <!-- fin asanchez 12-03-17-->
+                            </li>
+                            <li><a href="#"><img src="../imagen/iconos/nuevo.png"> | Almacen</a></li>
+                            <li><a href="#"><img src="../imagen/iconos/nuevo.png"> | Proveedores</a></li>
+                            <li><a href="#"><img src="../imagen/iconos/nuevo.png"> | Reportes</a>
+                                <ul>
+                                    <li><a href="#">&checkmark; opcion 1</a></li>
+                                    <li><a href="#">&checkmark; opcion 2</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </menu>
+            </div>
+            
+            <div class="cuerpo">
+                <div class="compras">
+                    <span>ORDEN DE COMPRA</span>
+                    <form action="" method="post">
+                        <!--<div class="datos_ordenc1">
+                            <span class="s1">Nro Orden:</span>
+                            <input type="text" name="" value="00001" disabled></br>
+                            <span class="s1">Fecha:</span>
+                            <input type="date" name="" required id="fecha" class="date1"></br>
+                            <span class="s1"> Condici&oacute;n de Pago:</span>
+                            <select name="" required id="select">
+                                <option value="" hidden="">Selecccione</option>
+                                <option value="1">Contado</option>
+                                <option value="2">Crédito</option>
+                            </select>
+                        </div>
+                        <div class="datos_ordenc2">
+                            <span>Proveedor:</span>
+                            <input type="text" name="" value="" disabled>
+                            <div class="buscar_proveedor">...</div></br>
+                            <span>Producto:</span>
+                            <input type="text" name="" value="" disabled>
+                            <div class="buscar_producto">...</div></br>
+                            <span>Productos Stock m&iacute;n:</span>
+                            <input type="text" name="" value="5" disabled>
+                            <div class="buscar_producto_stock_minimo">Ver</div></br>
+                        </div>-->
+						<table class="tabla_oc1">
+							<tr>
+								<td class="oc_c1">Nro Orden:</td>
+								<td class="oc_c2"><input type="text" name="" value="00001" disabled class="inputs_table1"></td>
+							</tr>
+							<tr>
+								<td class="oc_c1">Fecha:</td>
+								<td class="oc_c2"><input type="date" name="" id="fecha" class="inputs_table1"></td>
+							</tr>
+							<tr>
+								<td class="oc_c1">Condici&oacute;n de Pago:</td>
+								<td class="oc_c2">
+									<select name="" required id="select" class="inputs_table1">
+										<option value="" hidden="">Selecccione</option>
+										<option value="1">Contado</option>
+										<option value="2">Crédito</option>
+									</select>
+								</td>
+							</tr>
+						</table>
+						
+						<table class="tabla_oc2">
+							<tr>
+								<td class="oc_c1">Proveedor:</td>
+								<td class="oc_c2"><input type="text" name="" value="" disabled class="inputs_table2"></td>
+								<td ><div class="buscar_proveedor">...</div></td>
+							</tr>
+							<tr>
+								<td class="oc_c1">Producto:</td>
+								<td class="oc_c2"><input type="text" name="" value="" disabled class="inputs_table2"></td>
+								<td ><div class="buscar_producto">...</div></td>
+							</tr>
+							<tr>
+								<td class="oc_c1">Productos Stock m&iacute;n:</td>
+								<td class="oc_c2"><input type="text" name="" value="5" disabled class="inputs_table2"></td>
+								<td><div class="buscar_producto_stock_minimo">Ver</div></td>
+							</tr>
+						</table>
+						
+						<table class="tabla_oc3">						
+							<tr>
+								<th class="oc_th1">Nro</th>
+								<th class="oc_th2">Proveedor</th>
+								<th class="oc_th3">Producto</th>
+								<th class="oc_th4">Cantidad</th>
+								<th class="oc_th5">U.M</th>
+								<th class="oc_th6">P.U</th>
+								<th class="oc_th7">Total</th>
+							</tr>
+						</table>
+                    </form>
+                </div>
+            </div>
+            <div class="pie">
+                <footer>
+                    Copyright © 2017 Distribuidora "Razón Social" SRL. All rights reserved - Atención al Cliente: 0800-1-3466
+                </footer>
+            </div>
+        </div>
+		<script type="text/javascript" src="../js/jquery.min2.js"></script>
+		<script type="text/javascript" src="../js/jquery-ui.js"></script>
+		<script type="text/javascript" src="../js/menu.js"></script>
+    </body>
+</html>
+

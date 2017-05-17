@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dino - Intranet</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="../css/admin.css" rel="stylesheet" type="text/css">
+        <link rel="shortcut icon" href="../imagen/logo.png">
+    </head>
+    <body>
+        <div class="contenedor">
+            <div class="cabeza">
+                <section id="grupocabeza">
+                    <div class="logotipo">
+                    <img src="../imagen/logo.png">
+                    <p><b>OBLITAS</b></p>
+                    <p>Maestro de la construcción</p>
+                    </div>
+                    <div class="datos">
+                        <p>Trujillo, 18 de Enero del 2017</p>
+                    </div>
+                </section>
+            </div>
+            <div class="derecha">
+                <center><p><b>Tipo de Cambio</b></p></center>
+                <br>
+                <p>Compra S/</p><br>
+                <input type="text" placeholder="Compra"><br>
+                <p>Venta S/</p><br>
+                <input type="text" placeholder="Venta"><br>
+            </div>
+            <div class="izquierda">
+                <menu>
+                    <nav>
+                        <ul>
+                            <li><a id="perfil" >
+                                    <b>Bienvenido :</b><br> 
+                                    <br>
+                                    Eduardo Paz<br>
+                                    Super Administrador<br>
+                                </a>
+                            </li>
+                            <li><a href="#"><img src="../imagen/iconos/inicio.png"> | Inicio</a></li>
+                            <li><a href="#"><img src="../imagen/iconos/nuevo.png"> | Ventas</a>
+                                <ul>
+                                    <li><a href="#">&checkmark; opcion 1</a></li>
+                                    <li><a href="#">&checkmark; opcion 2</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#"><img src="../imagen/iconos/nuevo.png"> | Compras</a>
+                                <ul>
+                                    <li><a href="#">&checkmark; opcion 1</a></li>
+                                    <li><a href="#">&checkmark; opcion 2</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#"><img src="../imagen/iconos/nuevo.png"> | Almacen</a></li>
+                            <li><a href="#"><img src="../imagen/iconos/nuevo.png"> | Proveedores</a></li>
+                            <li><a href="#"><img src="../imagen/iconos/nuevo.png"> | Reportes</a>
+                                <ul>
+                                    <li><a href="#">&checkmark; opcion 1</a></li>
+                                    <li><a href="#">&checkmark; opcion 2</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </menu>
+            </div>
+            <div class="formbuscarProducto" id="añadirproducto">
+                <label id="close">X</label>
+                <p>Buscar Producto</p>
+                <form action="" method="post">
+                    <input type="search" name="" placeholder="Ingresa Nombre Producto" id="Buscar" required>
+                    <input type="submit" value=" Buscar Producto" id="btnbuscar">                  
+                </form>
+                <form action="" method="post">
+                    <span>> Producto</span>
+                    <span>Descripción:</span>
+                    <span>> Cantidad:</span>
+                    <input type="number" placeholder="Cantidad" name=""  required>
+                    <span>> Precio Unit.:</span>
+                    <input type="number" placeholder="Precio Unit." name=""  required>  
+                    <input type="submit" value="<< Añadir Detalle" id="btnbuscar"> 
+                </form>
+            </div>
+            <div class="formbuscarProducto" id="editardetalle">
+                <label id="closeB">X</label>
+                <p>Detalle Producto</p>
+                <form action="" method="post">
+                    <span>> Producto</span>
+                    <input type="text" placeholder="producto" name="" id="producto"  required>
+                    <span>Descripción:</span>
+                    <input type="text" placeholder="producto" name="" id="descripcion"  required>
+                    <span>> Cantidad:</span>
+                    <input type="number" placeholder="Cantidad" name="" id="cantidadPro" required>
+                    <span>> Precio Unit.:</span>
+                    <input type="number" placeholder="Precio Unit." name="" id="precioUnit"  required>  
+                    <input type="submit" value="Edición Finalizada" id="btnbuscar"> 
+                </form>
+            </div>
+            <div class="cuerpo">
+                <div class="Facturacion">
+                    <div class="agregar">Añadir Producto</div>
+                    <span>FACTURACIÓN</span>
+                    <form action="" method="post">
+                        <div class="datoscliente">
+                            <span>Cliente:</span>
+                            <input type="text" placeholder="Cliente" name=""  required>
+                            <span>RUC:</span>
+                            <input type="text" placeholder="RUC" name="" required>
+                            <span>Dirección:</span>
+                            <input type="text" placeholder="Dirección" name="" required>  
+                        </div>
+                        <div class="datosFecha">
+                            <span>Factura N°</span>
+                            <input type="text" placeholder="N° Factura" name="" required>
+                            <span>Fecha</span>
+                            <input type="date" name="" required id="fecha">
+                            <span>Tipo Venta</span>
+                            <select name="" required id="select">
+                                <option value="" hidden="">Seccione</option>
+                                <option value="1">Crédito</option>
+                                <option value="2">Contado</option>
+                            </select>
+                        </div>
+                        <div class="datosVenta">
+                            <span id="accion">|</span>
+                            <span id="accion">|</span>
+                            <span id="cantidad">Cantidad</span>
+                            <span>Producto</span>
+                            <span>Precio Unit.</span>
+                            <span>Precio Total.</span>
+                            <a href="#" title="Quitar">X</a>
+                            <a href="#" title="Editar" id="editar" class="producto2">></a>
+                            <input type="number" placeholder="#" name="" id="cantidad" required>
+                            <input type="text" placeholder="Descripción" name="" required>
+                            <input type="number" placeholder="Precio Unit." name="" required>
+                            <input type="number" placeholder="Precio Total" name="" required>
+                        </div>
+                        <div class="datosTotal">
+                            <span>Sub  Total</span>
+                            <input type="number" placeholder="Sub Total" name="" required>
+                            <span>I.G.V</span>
+                            <input type="text" placeholder="IGV" name="" required>
+                            <span>Total</span>
+                            <input type="number" placeholder="Total" name="" required>
+                        </div>
+                        <div class="btnFactura">
+                            <input type="submit" value="Realizar Venta">
+                        </div> 
+                    </form>
+                </div>
+            </div>
+            
+           
+            
+            <div class="pie">
+                <footer>
+                    Copyright © 2017 Distribuidora "Razón Social" SRL. All rights reserved - Atención al Cliente: 0800-1-3466
+                </footer>
+            </div>
+        </div>
+        <script type="text/javascript" src="../js/jquery.min2.js"></script>
+        <script type="text/javascript" src="../js/menu.js"></script>
+        
+          <script>
+              var firefox = navigator.userAgent.toLowerCase().indexOf('firefox') > -1;
+              var explore = navigator.userAgent.toLowerCase().indexOf('MSIE') > -1;
+              var opera = navigator.userAgent.toLowerCase().indexOf('opera') > -1;
+                if(firefox || explore || opera ){
+                alert("Utilice el navegador Chrome para tener una mejor experiencia con el sistema");
+                }
+                else{
+                    'Gracias Ahora Puede Disfrutar mejor la aplicación con todos sus atributos'
+                }
+          </script>
+          <script>
+            
+            var detalle=[
+                   
+                    [1,2,'Ladrillo Forte','pandereta',2.50],
+                    [2,2,'Alambre','1/2',1.50],
+
+                ]; 
+                
+ 
+                        $('.producto2').click(function(){
+                            for (var i = 0; i < detalle.length; i++) {
+                                var detalleID = 2;
+                                if(detalleID == detalle[i][0])
+                                {
+                                    /*$('#editardetalle').animate({right:'0'});*/
+                                    document.getElementById("cantidadPro").value =detalle[i][1];
+                                    document.getElementById("producto").value =detalle[i][2];
+                                    document.getElementById("descripcion").value =detalle[i][3];
+                                    document.getElementById("precioUnit").value =detalle[i][4];
+                                }
+                            }
+                        });
+
+        </script>
+        
+    </body>
+</html>
